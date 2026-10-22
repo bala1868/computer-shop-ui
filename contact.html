@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechZone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+              <i class="bi bi-pc-display-horizontal"></i>
+              Tech<span>Zone</span></a>
+        <input class="menu-checkbox" type="checkbox" id="mainMenuToggle" aria-label="Toggle navigation">
+        <label class="menu-button" for="mainMenuToggle" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="nav-menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="sell.html">Sell Your Device</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container text-center">
+        <p class="eyebrow">We Are Here to Help</p>
+        <h1>Get in <span>Touch</span></h1>
+        <p class="mx-auto mt-3" style="max-width: 650px;">
+            Need a new computer, want to sell your old device, or looking for a repair?
+            Contact our team and tell us how we can help.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <i class="bi bi-telephone"></i>
+                    <h5>Call Us</h5>
+                    <p>Speak with our team about products and services.</p>
+                    <a href="tel:+919876543210" class="text-decoration-none">+91 98765 43210</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <i class="bi bi-envelope"></i>
+                    <h5>Email Us</h5>
+                    <p>Send your questions or service enquiries.</p>
+                    <a href="mailto:support@techzone.com" class="text-decoration-none">support@techzone.com</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <i class="bi bi-tools"></i>
+                    <h5>Computer Repair</h5>
+                    <p>Get help with computer issues and upgrades.</p>
+                    <a href="#contactForm" class="text-decoration-none">Request a repair</a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card">
+                    <i class="bi bi-clock"></i>
+                    <h5>Opening Hours</h5>
+                    <p>Monday – Saturday</p>
+                    <p class="fw-bold">9:30 AM – 8:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section products-section">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <p class="section-kicker">Contact TechZone</p>
+                <h2 class="section-title">How Can We Help You?</h2>
+                <p class="text-secondary">
+                    Whether you need help choosing a laptop, selling a used computer,
+                    or booking a repair, send us a message.
+                </p>
+
+                <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80"
+                    alt="Customer using a laptop"
+                    class="img-fluid rounded-4 mt-3"
+                    style="height: 300px; width: 100%; object-fit: cover;"
+                >
+
+                <div class="mt-4">
+                    <h5 class="fw-bold">Our Services</h5>
+                    <p><i class="bi bi-check-circle-fill text-primary me-2"></i>New and refurbished computers</p>
+                    <p><i class="bi bi-check-circle-fill text-primary me-2"></i>Used computer buying and selling</p>
+                    <p><i class="bi bi-check-circle-fill text-primary me-2"></i>Hardware repair and upgrades</p>
+                    <p><i class="bi bi-check-circle-fill text-primary me-2"></i>Computer accessories</p>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="form-panel bg-white border rounded-4 p-4 p-md-5">
+                    <h2 class="section-title">Send Us a Message</h2>
+
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Your name" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="Your email" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="Your phone number" pattern="[6-9][0-9]{9}" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="service" class="form-label">What Do You Need?</label>
+                                <select id="service" class="form-select" required>
+                                    <option value="">Select a service</option>
+                                    <option>Buy a Computer</option>
+                                    <option>Sell a Computer</option>
+                                    <option>Computer Repair</option>
+                                    <option>Accessories</option>
+                                    <option>Other Enquiry</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea id="message" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="button" class="btn btn-primary w-100 py-3">
+                                    Send Message <i class="bi bi-send ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="text-center mb-4">
+            <p class="section-kicker">Find Us</p>
+            <h2 class="section-title">Visit Our Store</h2>        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="map-panel rounded-4 overflow-hidden border">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1002221.0189475161!2d77.78760000000003!3d11.118899999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDMzJzE0LjMiTiA3N8KwMzMnMDYuMyJF!5e0!3m2!1sen!2sin!4v1792675824026!5m2!1sen!2sin" ;width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                        width="100%"
+                        height="350"
+                        style="border: 0;"
+                        loading="lazy"
+                        title="Map showing Coimbatore">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <a class="footer-brand" href="index.html">Tech<span>Zone</span></a>
+                <p class="mt-3">Your destination for buying, selling and repairing computers.</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="sell.html">Sell Your Device</a>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <p><i class="bi bi-envelope me-2"></i>support@techzone.com</p>
+                <p><i class="bi bi-telephone me-2"></i>+91 98765 43210</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center ms-auto">
+            © 2026 TechZone. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

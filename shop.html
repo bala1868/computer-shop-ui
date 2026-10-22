@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - TechZone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+              <i class="bi bi-pc-display-horizontal"></i>
+              Tech<span>Zone</span></a>
+        <input class="menu-checkbox" type="checkbox" id="mainMenuToggle" aria-label="Toggle navigation">
+        <label class="menu-button" for="mainMenuToggle" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="nav-menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="sell.html">Sell Your Device</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <p class="eyebrow">Find Your Next Upgrade</p>
+        <h1>Shop Computers & <span>Accessories</span></h1>
+        <p>Explore laptops, desktops, monitors and accessories at prices that make sense.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+            <div>
+                <p class="section-kicker mb-2">Our Collection</p>
+                <h2 class="section-title mb-0">Explore Products</h2>
+            </div>
+            <div class="d-flex gap-2">
+                <input type="search" id="searchInput" class="form-control" placeholder="Search products">
+                <select id="categoryFilter" class="form-select">
+                    <option value="all">All Products</option>
+                    <option value="laptop">Laptops</option>
+                    <option value="desktop">Desktops</option>
+                    <option value="accessory">Accessories</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row g-4" id="productList">
+            <div class="col-6 col-lg-3 product-item" data-category="laptop">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80" alt="Laptop">
+                    <div class="product-info">
+                        <p class="product-category">Laptop</p>
+                        <h5>HP Pavilion Laptop</h5>
+                        <p class="product-description">Everyday work and study</p>
+                        <p class="price">₹52,999</p>
+                        <button class="btn btn-primary w-100 add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 product-item" data-category="laptop">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=700&q=80" alt="Silver laptop">
+                    <div class="product-info">
+                        <p class="product-category">Laptop</p>
+                        <h5>Apple MacBook</h5>
+                        <p class="product-description">Slim design and performance</p>
+                        <p class="price">₹89,999</p>
+                        <button class="btn btn-primary w-100 add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 product-item" data-category="desktop">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80" alt="Desktop computer setup">
+                    <div class="product-info">
+                        <p class="product-category">Desktop</p>
+                        <h5>Gaming Desktop PC</h5>
+                        <p class="product-description">Powerful gaming performance</p>
+                        <p class="price">₹74,999</p>
+                        <button class="btn btn-primary w-100 add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 product-item" data-category="accessory">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=700&q=80" alt="Computer mouse">
+                    <div class="product-info">
+                        <p class="product-category">Accessory</p>
+                        <h5>Wireless Mouse</h5>
+                        <p class="product-description">Comfortable everyday use</p>
+                        <p class="price">₹799</p>
+                        <button class="btn btn-primary w-100 add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 product-item" data-category="accessory">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80" alt="Computer monitor">
+                    <div class="product-info">
+                        <p class="product-category">Accessory</p>
+                        <h5>LED Monitor</h5>
+                        <p class="product-description">Clear display for work and play</p>
+                        <p class="price">₹8,499</p>
+                        <button class="btn btn-primary w-100 add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 product-item" data-category="accessory">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=700&q=80" alt="Computer keyboard">
+                    <div class="product-info">
+                        <p class="product-category">Accessory</p>
+                        <h5>Gaming Keyboard</h5>
+                        <p class="product-description">Responsive keys for gaming</p>
+                        <p class="price">₹1,499</p>
+                        <button class="btn btn-primary w-100 add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 product-item" data-category="desktop">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=700&q=80" alt="Desktop computer">
+                    <div class="product-info">
+                        <p class="product-category">Desktop</p>
+                        <h5>Office Desktop PC</h5>
+                        <p class="product-description">Reliable office performance</p>
+                        <p class="price">₹39,999</p>
+                        <button class="btn btn-primary w-100 add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 product-item" data-category="accessory">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Headphones">
+                    <div class="product-info">
+                        <p class="product-category">Accessory</p>
+                        <h5>Wireless Headphones</h5>
+                        <p class="product-description">Enjoy music and clear calls</p>
+                        <p class="price">₹2,299</p>
+                        <button class="btn btn-primary w-100 add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <a class="footer-brand" href="index.html">Tech<span>Zone</span></a>
+                <p class="mt-3">Your destination for buying, selling and repairing computers.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="sell.html">Sell Your Device</a>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <p><i class="bi bi-envelope me-2"></i>support@techzone.com</p>
+                <p><i class="bi bi-telephone me-2"></i>+91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">© 2026 TechZone. All rights reserved.</div>
+    </div>
+</footer>
+
+</body>
+</html>
